@@ -1,0 +1,133 @@
+2019-08-23 18:30:02 [scrapy.utils.log] INFO: Scrapy 1.7.3 started (bot: scrapy_spider)
+2019-08-23 18:30:02 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.6.8 |Anaconda, Inc.| (default, Feb 21 2019, 18:30:04) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.18362-SP0
+2019-08-23 18:30:02 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_spider', 'LOG_FILE': 'logs\\scrapy_spider\\toutiao\\f5409342c59011e9a41d005056c00008.log', 'NEWSPIDER_MODULE': 'scrapy_spider.spiders', 'SPIDER_MODULES': ['scrapy_spider.spiders']}
+2019-08-23 18:30:02 [scrapy.extensions.telnet] INFO: Telnet Password: f4e2e80c117675a1
+2019-08-23 18:30:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-08-23 18:30:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-08-23 18:30:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-08-23 18:30:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_spider.pipelines.TestbotPipeline']
+2019-08-23 18:30:02 [scrapy.core.engine] INFO: Spider opened
+2019-08-23 18:30:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-08-23 18:30:02 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-08-23 18:30:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/> (referer: None)
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '教育部召开“不忘初心、牢记使命”主题教育党组成员调研成果交流会',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '国务院教育督导委员会办公室2019年第5号预警：防治学生欺凌暴力 建设阳光安全校园',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '习近平总书记前往甘肃考察，为何要来这所学校？',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '陈宝生向全国人大常委会作国务院关于学前教育事业改革和发展情况报告 学前教育规模快速扩大立法进程加快',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '习近平考察山丹培黎学校',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '翁铁慧会见德国霍尔茨布林克出版集团首席执行官',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '俞建勇任东华大学校长',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '教育部组织开展高中统编三科教材国家级示范培训',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '教育部召开直属机关“四项整顿”动员部署会',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '外语中文译写规范部际联席会议专家委员会发布第八批推荐使用外语词中文译名',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '郑富芝赴甘肃实地调研城镇小区配套幼儿园建设及民办义务教育',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '努力把基础教育越办越好——专访教育部副部长郑富芝',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '吴道槐赴北京大学、中国人民大学调研',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '关于2019年中小学生暑假安全工作的提示',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '教育部党组理论学习中心组召开“不忘初心、牢记使命”主题教育集中学习研讨扩大会',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '教育部公开曝光6起违反教师职业行为十项准则典型案例',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '钟登华调研新时代卓越人才培养与科技创新工作',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '教育部印发《国家级大学生创新创业训练计划管理办法》',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '教育部印发《关于加强和规范普通本科高校实习管理工作的意见》',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/>
+{'label': '中华人民共和国教育部',
+ 'name': '教育部召开直属机关“不忘初心、牢记使命”主题教育警示教育会',
+ 'url': 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/'}
+2019-08-23 18:30:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-08-23 18:30:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 232,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 7819,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.436664,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 8, 23, 10, 30, 2, 726566),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 21,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2019, 8, 23, 10, 30, 2, 289902)}
+2019-08-23 18:30:02 [scrapy.core.engine] INFO: Spider closed (finished)

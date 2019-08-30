@@ -1,0 +1,492 @@
+2019-08-23 00:23:03 [scrapy.utils.log] INFO: Scrapy 1.7.3 started (bot: scrapy_spider)
+2019-08-23 00:23:03 [scrapy.utils.log] INFO: Versions: lxml 4.4.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.6.8 |Anaconda, Inc.| (default, Feb 21 2019, 18:30:04) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.18362-SP0
+2019-08-23 00:23:03 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_spider', 'LOG_FILE': 'logs\\scrapy_spider\\qq\\1d0ab46cc4f911e9bb1c005056c00008.log', 'NEWSPIDER_MODULE': 'scrapy_spider.spiders', 'SPIDER_MODULES': ['scrapy_spider.spiders']}
+2019-08-23 00:23:03 [scrapy.extensions.telnet] INFO: Telnet Password: e572ddc298e765b9
+2019-08-23 00:23:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-08-23 00:23:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-08-23 00:23:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-08-23 00:23:04 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_spider.pipelines.TestbotPipeline']
+2019-08-23 00:23:04 [scrapy.core.engine] INFO: Spider opened
+2019-08-23 00:23:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-08-23 00:23:04 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-08-23 00:23:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0> (referer: None)
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0>
+{'label': '腾讯新闻',
+ 'name': '香港市民怒怼堵地铁闸门废青：啃老仔 我们不上班你吃什么？',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0QZRS00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0>
+{'label': '腾讯新闻',
+ 'name': '国家防总：11号台风“白鹿”将登陆我国沿海 可能发生秋汛',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0DKZH00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0>
+{'label': '腾讯新闻',
+ 'name': '美债收益率再次倒挂！美股全线转跌，道指抹去近200点涨幅',
+ 'url': 'https://new.qq.com/zt/template/?id=STO2019071100811600'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0>
+{'label': '腾讯新闻',
+ 'name': '亚马逊雨林大火连烧3周没人管？巴西总统：是NGO故意纵火',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0MN8D00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0>
+{'label': '腾讯新闻',
+ 'name': '学校不允学生烫发 学生自然卷被要求到医院开证明',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0MB2900.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0>
+{'label': '腾讯新闻',
+ 'name': '创业故事 | “36岁，被单位解聘，我干起了深夜外卖”',
+ 'url': 'https://new.qq.com/omn/20190821/20190821A07PGS00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0>
+{'label': '腾讯新闻',
+ 'name': '12岁少女失踪十余日村中废井现疑似女尸 警方：正在侦办',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0Q4KH00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0>
+{'label': '腾讯新闻',
+ 'name': '监拍：女孩被撞卷入货车底 10秒后奇迹般淡定爬出',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0Q6ZN00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0>
+{'label': '腾讯新闻',
+ 'name': '莆田系医美“隆胸夺命术”：麻醉师多手术在线、病志被指造假',
+ 'url': 'https://new.qq.com/omn/FIN20190/FIN2019082200816200.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0>
+{'label': '腾讯新闻',
+ 'name': '英国驻港领馆港籍雇员被拘原因曝光：因嫖娼在深圳被拘留',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0I9OH00.html'}
+2019-08-23 00:23:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1> (referer: https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=0)
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1>
+{'label': '腾讯新闻',
+ 'name': '传4G网速降了？工信部回应：从未、将来也不会要求运营商降速',
+ 'url': 'https://new.qq.com/zt/template/?id=TEC2019081900849300'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1>
+{'label': '腾讯新闻',
+ 'name': '泰国旅游大巴出车祸侧翻司机当场身亡 车内载19名中国游客',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0Q0MW00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1>
+{'label': '腾讯新闻',
+ 'name': '12名前校领导举报数亿元校产被侵占，北京人文大学再陷舆论漩涡',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0CF9N00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1>
+{'label': '腾讯新闻',
+ 'name': '面目全非！沉船百年后 泰坦尼克号最新水下高清视频曝光',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0DSA300.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1>
+{'label': '腾讯新闻',
+ 'name': '商务部：如美方实施新的加征关税 中方将不得不采取相应反制措施',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0NQR600.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1>
+{'label': '腾讯新闻',
+ 'name': '中国结婚率创近10年来新低，“结不结婚，自己说了算”',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A09ZVR00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1>
+{'label': '腾讯新闻',
+ 'name': '撒泼比正常维权更有效？奔驰女车主代理律师：撒个“优雅泼”更好',
+ 'url': 'https://new.qq.com/omn/CRI20190/CRI2019082200502900.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1>
+{'label': '腾讯新闻',
+ 'name': '令人发指！因怀疑是警察，香港暴徒非法禁锢还非礼一名女路人',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V08KO700.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1>
+{'label': '腾讯新闻',
+ 'name': '美国撕毁《中导条约》目的终于暴露，剑指中国',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0KYKO00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1>
+{'label': '腾讯新闻',
+ 'name': '中国游客老挝遇车祸细节：传出焦臭味后翻车，事发路段弯多坡陡',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0MWON00.html'}
+2019-08-23 00:23:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2> (referer: https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=1)
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2>
+{'label': '腾讯新闻',
+ 'name': 'GDP总量从香港的1/700到反超，这些年深圳发生了什么？',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0P1YE00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2>
+{'label': '腾讯新闻',
+ 'name': '韩国决定作废韩日《军事情报保护协定》',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0J1B600.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2>
+{'label': '腾讯新闻',
+ 'name': '混血网红隆胸记：曾在肚脐上穿脐环，被母亲硬生生拽下来',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A05WJW00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2>
+{'label': '腾讯新闻',
+ 'name': '印度药企入华提速：曾因无法“入乡随俗”，错过黄金十年',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0JPZM00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2>
+{'label': '腾讯新闻',
+ 'name': '又一个被骂“消费穷人”的主播，和为他叫好的粉丝们',
+ 'url': 'https://new.qq.com/zt/template/?id=SOT2019082200717400'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2>
+{'label': '腾讯新闻',
+ 'name': '中国旅行团老挝车祸地点回访：车辆变形 泥土中找到鞋',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0N6Q300.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2>
+{'label': '腾讯新闻',
+ 'name': '消息称温州银行行长吴华或被双规 疑遭当地纪检某高层实名举报',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0KBEY00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2>
+{'label': '腾讯新闻',
+ 'name': '丹麦拒绝卖岛，特朗普为啥反应这么大？',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0K3N400.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2>
+{'label': '腾讯新闻',
+ 'name': '紧急呼叫丨村民忆汶川山洪惊魂夜：站顶楼看水到天亮 背游客逃生',
+ 'url': 'https://new.qq.com/zt/template/?id=TWF2019082200059200'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2>
+{'label': '腾讯新闻',
+ 'name': '探访河南28岁女护士整形死亡诊所：外观简陋位于南阳市中心',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0MPW300.html'}
+2019-08-23 00:23:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3> (referer: https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=2)
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3>
+{'label': '腾讯新闻',
+ 'name': '财经热榜| 瓜子卖泡水车被央视点名 代言人孙红雷或担责',
+ 'url': 'https://new.qq.com/omn/FIN20190/FIN2019082200775400.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3>
+{'label': '腾讯新闻',
+ 'name': '贵州岑巩一工厂失火：厂房被浓烟烈火吞噬 已致1死9伤',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0HDVS00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3>
+{'label': '腾讯新闻',
+ 'name': '警方通报夫妻虐童案：5岁女儿经常遭虐待 还有一8岁儿子',
+ 'url': 'https://new.qq.com/omn/PAH20190/PAH2019082200697300.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3>
+{'label': '腾讯新闻',
+ 'name': 'ofo没死：不仅做了广告，每天北京还有20万单量',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0LJAN00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3>
+{'label': '腾讯新闻',
+ 'name': '一文读懂融创业绩会：融资状况收紧史无前例 下半年没有拿地指标',
+ 'url': 'https://new.qq.com/zt/template/?id=FIN2019082100095300'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3>
+{'label': '腾讯新闻',
+ 'name': '被遗忘的村落：下雨公路塌方电话打不通，老人中风六人抬下山',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0EFM700.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3>
+{'label': '腾讯新闻',
+ 'name': '警方悬赏50万征集“李尚平枪杀案”线索 家属：说明调查没进展',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0FMW000.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3>
+{'label': '腾讯新闻',
+ 'name': '猖狂！俩男子潜入部队场区，偷拆59式坦克的履带卖钱',
+ 'url': 'https://new.qq.com/omn/20190821/20190821A0R4H300.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3>
+{'label': '腾讯新闻',
+ 'name': '商务部：将于近期发布不可靠实体清单 中美经贸团队仍保持沟通',
+ 'url': 'https://new.qq.com/omn/FIN20190/FIN2019082200647000.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3>
+{'label': '腾讯新闻',
+ 'name': '一线｜郑爽否认结婚隐退：五年内无结婚计划 家人也没催婚',
+ 'url': 'https://new.qq.com/omn/ENT20190/ENT2019082200679400.html'}
+2019-08-23 00:23:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4> (referer: https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=3)
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4>
+{'label': '腾讯新闻',
+ 'name': '二胎丁克哪个更需要勇气？让人惊讶的大多数：他们怎么会这么选',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A04TJ800.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4>
+{'label': '腾讯新闻',
+ 'name': '谷雨丨乔布斯坐拥几亿身家，女儿靠政府救济生活：我的童年并不惨',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0D1E800.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4>
+{'label': '腾讯新闻',
+ 'name': '吴谢宇父母密友：现场发现两具“尸体” 吴谢宇表现出求生欲',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A06GHH00.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4>
+{'label': '腾讯新闻',
+ 'name': '苏州一公交车起火车身被大火吞噬 目击者：附近店主翻栏杆帮灭火',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0CNS700.html'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4>
+{'label': '腾讯新闻',
+ 'name': '沃克23+6米尔斯19分 美国6人得分上双轻取澳大利亚',
+ 'url': 'https://new.qq.com/zt/template/?id=NBA2018032901338700'}
+2019-08-23 00:23:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4>
+{'label': '腾讯新闻',
+ 'name': '北大三次退档补录考生：被舆论改写的命运',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0CNDY00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4>
+{'label': '腾讯新闻',
+ 'name': '经过“非常艰难的”谈判后，日本与美国仍未能达成贸易协议',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0I59Q00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4>
+{'label': '腾讯新闻',
+ 'name': '汪涵与好友吃饭不选包间，边吃饭还脱鞋光脚，儒雅形象大跌',
+ 'url': 'https://new.qq.com/omn/20190821/20190821A0PXS300.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4>
+{'label': '腾讯新闻',
+ 'name': '“20年后打老师”案男子暂缓申诉，其父称教师节替儿子负荆请罪',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0FKRY00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4>
+{'label': '腾讯新闻',
+ 'name': '中国电信布局5G路径曝光：或与联通共建共享',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0D4AT00.html'}
+2019-08-23 00:23:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=5> (referer: https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=4)
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=5>
+{'label': '腾讯新闻',
+ 'name': '一文看后市：妖股重现江湖提振人气，市场随时加速上涨！',
+ 'url': 'https://new.qq.com/zt/template/?id=STO2019070900521600'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=5>
+{'label': '腾讯新闻',
+ 'name': '哭声揪人！四川甘孜一女子深夜街头遭殴打 警方：已介入调查',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0CQR000.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=5>
+{'label': '腾讯新闻',
+ 'name': '“造车狂人”庞青年涉嫌诈骗2亿元近7年后 最高法再审立案',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0HR1400.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=5>
+{'label': '腾讯新闻',
+ 'name': '港铁工会：多名无辜职员遭暴徒欺凌 被辱骂“问候祖宗十八代”',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0CS2400.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=5>
+{'label': '腾讯新闻',
+ 'name': '阿里京东正在争夺下沉市场 拼多多却杀向一二线城市',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0F7BH00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=5>
+{'label': '腾讯新闻',
+ 'name': '勾外力最卖力！港媒：陈方安生被曝又与英国驻港总领事见面',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A08LBJ00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=5>
+{'label': '腾讯新闻',
+ 'name': '李尚平老师被枪杀17年后 警方在辖区派出所贴出枪支照片悬赏',
+ 'url': 'https://new.qq.com/omn/TWF20190/TWF2019082200695300.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=5>
+{'label': '腾讯新闻',
+ 'name': '中国民企500强出炉：华为再登榜首 广东牛企多山东很尴尬',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0CJKT00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=5>
+{'label': '腾讯新闻',
+ 'name': '外媒称喜马拉雅将启动10亿美元IPO 回应：尚未有明确计划',
+ 'url': 'https://new.qq.com/omn/TEC20190/TEC2019082200606900.html'}
+2019-08-23 00:23:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6> (referer: https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=5)
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6>
+{'label': '腾讯新闻',
+ 'name': '科创板开市满月，看十大重磅数据！150多万投资者首月交易',
+ 'url': 'https://new.qq.com/zt/template/?id=FIN2019072900965900'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6>
+{'label': '腾讯新闻',
+ 'name': '一笔一划！艾克森写中文图片曝光 白底黑字写出自己的中文名',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0C2BM00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6>
+{'label': '腾讯新闻',
+ 'name': '郑爽生日会跳劲爆热舞开场 舞姿妩媚动人跟平时的她不太一样',
+ 'url': 'https://new.qq.com/omn/ENT20190/ENT2019082200587700.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6>
+{'label': '腾讯新闻',
+ 'name': '官商围猎榆林原市委书记胡志强上亿元，陕西原首富高乃则行贿最多',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0AN6000.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6>
+{'label': '腾讯新闻',
+ 'name': '湖南永州中院回应“庭长不开房保证书”：暂无发现不正当关系',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A05CPF00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6>
+{'label': '腾讯新闻',
+ 'name': '广汽本田董事长腐败案：庞大董事长送房 青岛福日董事长送表',
+ 'url': 'https://new.qq.com/omn/FIN20190/FIN2019082200569200.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6>
+{'label': '腾讯新闻',
+ 'name': '湖南李尚平案发布50万悬赏征集线索 警方透露收到线索正核查',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0A1Q200.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6>
+{'label': '腾讯新闻',
+ 'name': '“价值15万包裹被德邦误送旧衣回收厂”续：双方达成和解',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0C7O600.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6>
+{'label': '腾讯新闻',
+ 'name': '特朗普再提打算取消出生公民权 专家：违宪',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0B8XO00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6>
+{'label': '腾讯新闻',
+ 'name': '双标何时休？内地男子在美驻港领馆涂字获刑，侮辱国徽暴徒获保释',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A03OL400.html'}
+2019-08-23 00:23:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=7> (referer: https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=6)
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=7>
+{'label': '腾讯新闻',
+ 'name': '老挝车祸女子被丈夫拽出获救：很多同胞回不去了 很难过',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0BDKR00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=7>
+{'label': '腾讯新闻',
+ 'name': '连续两起“高价值包裹被误送丢失” 德邦：存在过失，将赔偿',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0AT6900.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=7>
+{'label': '腾讯新闻',
+ 'name': '湖南女子护坟被杀父嫌犯家属告上法庭 当事人：接受调解放弃索赔',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A09PU100.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=7>
+{'label': '腾讯新闻',
+ 'name': '张家辉注册“渣渣辉”商标多达45项，网友：阴影面积得多大',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0ADRH00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=7>
+{'label': '腾讯新闻',
+ 'name': '1068魂考丨给别人添麻烦=社交智慧？中国人的社交之谜',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A03HHC00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=7>
+{'label': '腾讯新闻',
+ 'name': '在岸人民币对美元汇率失守7.07关口 续创2008年以来新低',
+ 'url': 'https://new.qq.com/omn/FIN20190/FIN2019082200568200.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=7>
+{'label': '腾讯新闻',
+ 'name': '《尚气》男主角回应选角争议：不会让电影存在种族歧视',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A07J8V00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=7>
+{'label': '腾讯新闻',
+ 'name': '“蜘蛛侠”惜别漫威，细数索尼和迪士尼24年IP恩怨',
+ 'url': 'https://new.qq.com/omn/20190821/20190821A0QBOC00.html'}
+2019-08-23 00:23:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8> (referer: https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=7)
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8>
+{'label': '腾讯新闻',
+ 'name': '打破世界纪录！88名学生同弹一架钢琴 声音竟是这样的',
+ 'url': 'https://new.qq.com/omn/20190821/20190821V0L26100.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8>
+{'label': '腾讯新闻',
+ 'name': '买岛被拒，特朗普狠批丹麦：那么富军费交那么少',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A076YN00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8>
+{'label': '腾讯新闻',
+ 'name': '专家：反对派绑架“通识教育”是制造“废青”的罪魁祸首',
+ 'url': 'https://new.qq.com/omn/20190821/20190821A0OV0I00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8>
+{'label': '腾讯新闻',
+ 'name': '《哪吒》深陷抄袭风波，中影华腾喊话饺子导演要求对剧本',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A07RGW00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8>
+{'label': '腾讯新闻',
+ 'name': '美拟对台出售F-16V战机 国台办再回应：立即停止恶劣行径',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A04QAN00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8>
+{'label': '腾讯新闻',
+ 'name': '“中国神船”合体在即 接下来哪些领域央企将重组？',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A06XUP00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8>
+{'label': '腾讯新闻',
+ 'name': '15万包裹损毁赔300背后：快递自定赔偿标准 八成网友曾保价',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0ARNA00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8>
+{'label': '腾讯新闻',
+ 'name': '华为高管：华盛顿的行动实际上伤害了美国企业',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0AINO00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8>
+{'label': '腾讯新闻',
+ 'name': '港星吴启华声援香港：做真正的中国人很自豪',
+ 'url': 'https://new.qq.com/omn/20190821/20190821A0MXGK00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8>
+{'label': '腾讯新闻',
+ 'name': '外媒记者节目中怒斥：西方国家双重标准对待香港暴力示威！',
+ 'url': 'https://new.qq.com/omn/20190821/20190821V0O38K00.html'}
+2019-08-23 00:23:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9> (referer: https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=8)
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9>
+{'label': '腾讯新闻',
+ 'name': '土地管理法草案：成片开发征地须经“省级以上政府批准”',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A075F500.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9>
+{'label': '腾讯新闻',
+ 'name': '湖南警方悬赏50万征集遇害教师李尚平案线索 姐姐：不抱希望',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A069YE00.html'}
+2019-08-23 00:23:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9>
+{'label': '腾讯新闻',
+ 'name': '印尼这次迁都是要玩真的？',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A06HC200.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9>
+{'label': '腾讯新闻',
+ 'name': '香港“示威者”进入元朗西站破坏公共设施与港警对峙',
+ 'url': 'https://new.qq.com/omn/TWF20190/TWF2019082200000400.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9>
+{'label': '腾讯新闻',
+ 'name': '香港机管局两员工被开除，疑似曾向极端示威者提供机场信息',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A05E0400.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9>
+{'label': '腾讯新闻',
+ 'name': '媒体称三大运营商9月1日5G商用 均不考虑大规模补贴5G手机',
+ 'url': 'https://new.qq.com/omn/TEC20190/TEC2019082200336000.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9>
+{'label': '腾讯新闻',
+ 'name': '山东女大学生上班失联6天：公司涉诈骗网站被黑，营业执照系借用',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A06HXJ00.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9>
+{'label': '腾讯新闻',
+ 'name': '紧急呼叫丨老挝车祸回访：8岁男孩躲过碎玻璃逃生 提醒外婆逃命',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V047GK00.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9>
+{'label': '腾讯新闻',
+ 'name': '较真丨喝酒御寒？男人适量饮酒有益健康？这是要命的错觉',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A059UL00.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9>
+{'label': '腾讯新闻',
+ 'name': '工信部：将支持有条件的地方建立燃油车禁行试点',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0677200.html'}
+2019-08-23 00:23:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=10> (referer: https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=9)
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=10>
+{'label': '腾讯新闻',
+ 'name': '2019中国民营企业500强榜单公布：华为连续四年位列榜首',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A05U0V00.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=10>
+{'label': '腾讯新闻',
+ 'name': '记者讲述遭港媒围堵经过：他们遮遮掩掩 不是心里有鬼是什么？',
+ 'url': 'https://new.qq.com/omn/20190822/20190822V0574M00.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=10>
+{'label': '腾讯新闻',
+ 'name': '赴美飞行学员坠亡：事发前曾要求换机 坠毁飞机13天报修6次',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A030MH00.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=10>
+{'label': '腾讯新闻',
+ 'name': '高校教师发表言论被停课2年 当事人：这事过去了，好好做科研',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A00Q0500.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=10>
+{'label': '腾讯新闻',
+ 'name': '我带孩子去泰国上夏令营：两周花三万学十几个单词，不觉得白来',
+ 'url': 'https://new.qq.com/omn/20190819/20190819A04PME00.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=10>
+{'label': '腾讯新闻',
+ 'name': '一笔一划！艾克森写中文图片曝光 白底黑字写出自己的中文名',
+ 'url': 'https://new.qq.com/zt/template/?id=SPO2019081800090700'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=10>
+{'label': '腾讯新闻',
+ 'name': '2000亿规模的宠物经济，为何没有巨头诞生',
+ 'url': 'https://new.qq.com/omn/20190821/20190821A0L0K600.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=10>
+{'label': '腾讯新闻',
+ 'name': '200斤男子在足浴店昏迷 120却叫来了110、119来帮忙',
+ 'url': 'https://new.qq.com/omn/20190821/20190821V0QVSL00.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=10>
+{'label': '腾讯新闻',
+ 'name': '人造肉香不香？到底什么是肉味',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A0384K00.html'}
+2019-08-23 00:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pacaio.match.qq.com/irs/rcd?cid=137&token=d0f13d594edfc180f5bf6b845456f3ea&ext=top&page=10>
+{'label': '腾讯新闻',
+ 'name': '男子在浙江舟山失联11天，女友称期间其信用卡在杭州有消费',
+ 'url': 'https://new.qq.com/omn/20190822/20190822A03TXG00.html'}
+2019-08-23 00:23:06 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-08-23 00:23:06 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4535,
+ 'downloader/request_count': 11,
+ 'downloader/request_method_count/GET': 11,
+ 'downloader/response_bytes': 300620,
+ 'downloader/response_count': 11,
+ 'downloader/response_status_count/200': 11,
+ 'elapsed_time_seconds': 2.206111,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 8, 22, 16, 23, 6, 227388),
+ 'item_scraped_count': 107,
+ 'log_count/DEBUG': 118,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 10,
+ 'response_received_count': 11,
+ 'scheduler/dequeued': 11,
+ 'scheduler/dequeued/memory': 11,
+ 'scheduler/enqueued': 11,
+ 'scheduler/enqueued/memory': 11,
+ 'start_time': datetime.datetime(2019, 8, 22, 16, 23, 4, 21277)}
+2019-08-23 00:23:06 [scrapy.core.engine] INFO: Spider closed (finished)
