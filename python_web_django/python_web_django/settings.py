@@ -25,7 +25,9 @@ SECRET_KEY = '47#9a$0e^129&mzf99&(7+=-6@%&d24mitrk8@j=xj@&+0c3!c'
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_HEADERS = ('*')
 # Application definition
 
 INSTALLED_APPS = [
@@ -35,12 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog.apps.BlogConfig'
+    'blog',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -53,7 +57,8 @@ ROOT_URLCONF = 'python_web_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        # 找到index。html文件
+        'DIRS': [os.path.join(BASE_DIR, 'blog/templates/static')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -79,16 +84,27 @@ WSGI_APPLICATION = 'python_web_django.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'python_web',
+#         'USER': 'root',
+#         'PASSWORD': '1234',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'python_web',
-        'USER': 'root',
-        'PASSWORD': '1234',
-        'HOST': '127.0.0.1',
+        'USER': 'bigdata',
+        'PASSWORD': '123456',
+        'HOST': '58.119.112.10',
         'PORT': '3306',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -124,4 +140,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/api/static/'
+STATIC_URL = '/static/'
+
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "/vueproject/dist/static"),
+# ]
+# STATIC_ROOT = os.path.join(BASE_DIR, 'C:/Users/zwj/Desktop/python/python_web_django/fronttend/static')
+STATICFILES_DIRS = [
+    # 找到静态文件
+    os.path.join(BASE_DIR, "blog/templates/static/static"),
+]
+
+SESSION_SERIALIZER = "django.contrib.sessions.serializers.PickleSerializer"
