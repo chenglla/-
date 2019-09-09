@@ -16,6 +16,7 @@ urlpatterns = [
     path('saveEditMoudle/', views.saveEditMoudle),
     path('delConfig/', views.delConfig),
     path('selectPie/', views.selectPie),
+    path('updatePass/', views.updatePass),
     # path('index/', views.index, name="index"),
 
 ]

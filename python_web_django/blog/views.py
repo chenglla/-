@@ -163,6 +163,12 @@ def saveEdit(request):
     return JsonResponse({"status": 'ok', "message": "Edit succeed"})
 
 
+def updatePass(request):
+    oldPass = request.GET.get('oldPass')
+    newPass = request.GET.get('newPass')
+    return JsonResponse({"status": 'ok', "message": "修改成功"})
+
+
 def saveEditMoudle(request):
     config_type = request.GET['config_type'],
     config_type = str(''.join(config_type))
