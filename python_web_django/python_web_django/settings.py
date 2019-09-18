@@ -57,7 +57,7 @@ ROOT_URLCONF = 'python_web_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # 找到index。html文件
+        # 找到index.html文件
         'DIRS': [os.path.join(BASE_DIR, 'blog/templates/static')]
         ,
         'APP_DIRS': True,
@@ -99,7 +99,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'python_web',
         'USER': 'bigdata',
-        'PASSWORD': '123456',
+        'PASSWORD': '123456!',
         'HOST': '58.119.112.10',
         'PORT': '3306',
     }

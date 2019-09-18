@@ -1,4 +1,6 @@
 from django.db import models
+# serializers.py
+# from rest_framework import serializers
 
 
 # Create your models here.
@@ -7,6 +9,8 @@ class Stu(models.Model):
     name = models.CharField(max_length=255)
     url = models.TextField(default="", verbose_name="爬取链接")
     label = models.TextField(default="")
+    createTime = models.DateField(u'create time', auto_now_add=True)
+    updateTime = models.DateField(u'update time', auto_now=True)
 
     # class Meta:
     #     app_label = 'blog'

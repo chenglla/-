@@ -1,3 +1,4 @@
+from django.forms.models import model_to_dict
 from django.shortcuts import render
 from django.http import JsonResponse
 from .models import *
@@ -8,6 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 from django.utils import timezone
+from django.http import HttpResponse
 import json
 import base64
 from django.views.decorators.csrf import csrf_exempt
@@ -21,6 +23,7 @@ def addConfig(request):
     if int(request.GET.get('status_select')) == 1:
         link = request.GET.get('link')
         django_css = request.GET.get('static_css')
+        django_url = request.GET.get('static_url')
         django_type = request.GET.get('static_type')
         django_t = request.GET.get('static_t')
         django_people = request.GET.get('static_people')
@@ -31,7 +34,7 @@ def addConfig(request):
         if link not in list:
             # # 表中添加数据
             ConfigInfo.objects.create(url=link, config_people=django_people, config_table=django_t,
-                                      config_type=django_type, config_css1=django_css,
+                                      config_type=django_type, config_css1=django_css, config_css2=django_url,
                                       config_status=1)
         # url = 'http://localhost:6800/schedule.json'
         # data = {'project': 'scrapy_spider', 'spider': 'toutiao', 'keyword': link, 'django_css': django_css,
@@ -70,27 +73,57 @@ def addConfig(request):
         return JsonResponse({"status": 0, "message": "模板存库爬取完成"})
 
 
+def getId(request):
+    info = Stu.objects.all().last()
+    data = model_to_dict(info)
+    id = data['id']
+    return JsonResponse({"status": 0, "message": "获取id成功", "id": id})
+
+
 def crawl(request):
+    # info = Stu.objects.all().last()
+    # data = model_to_dict(info)
+    # id = data['id']
+    # print(id)
+    # s = HttpResponse(json.dumps(data), content_type="application/json")
+    # print(s)
     if int(request.GET.get('status_select')) == 2:
         dynamic_link = request.GET.get('dynamic_link')
         dynamic_data = request.GET.get('dynamic_data')
         dynamic_css1 = request.GET.get('dynamic_css1')
         dynamic_css2 = request.GET.get('dynamic_css2')
-        dynamic_type = request.GET.get('dynamic_type')
+        # dynamic_type = request.GET.get('dynamic_type')
+        dynamic_date = request.GET.get('dynamic_date')
+        dynamic_type = request.GET.get('dynamic_name')
         url = 'http://localhost:6800/schedule.json'
         data = {'project': 'scrapy_spider', 'spider': 'qq', 'keyword': dynamic_link, 'dynamic_css1': dynamic_css1,
-                'dynamic_css2': dynamic_css2, 'dynamic_data': dynamic_data, 'dynamic_type': dynamic_type}
+                'dynamic_css2': dynamic_css2, 'dynamic_data': dynamic_data, 'dynamic_type': dynamic_type,
+                'dynamic_date': dynamic_date}
         print(requests.post(url=url, data=data))
         return JsonResponse({"status": 0, "message": "动态网址爬取完成"})
     else:
         link = request.GET.get('link')
         django_css = request.GET.get('static_css')
-        django_type = request.GET.get('static_type')
+        django_url = request.GET.get('static_url')
+        # django_type = request.GET.get('static_type')
+        django_name = request.GET.get('static_name')
+        static_date1 = request.GET.get('static_date1')
+
         url = 'http://localhost:6800/schedule.json'
         data = {'project': 'scrapy_spider', 'spider': 'toutiao', 'keyword': link, 'django_css': django_css,
-                'django_type': django_type}
+                'django_type': django_name, 'django_url': django_url, 'static_date1': static_date1}
         print(requests.post(url=url, data=data))
         return JsonResponse({"status": 0, "message": "静态网址爬取完成"})
+    #     return JsonResponse({"status": 0, "message": "静态网址爬取完成", "id": id})
+
+
+def getCrawlData(request):
+    id = request.GET.get('id')
+    # list = Stu.objects.filter(id__gt=6670)
+    list = Stu.objects.filter(id__gt=int(id))
+    data = serializers.serialize('json', list)
+    print(data)
+    return JsonResponse({"status": 0, "message": "静态网址爬取完成", "data": data})
 
 
 def getDB(link):
@@ -225,8 +258,24 @@ def delData(request):
     return JsonResponse({"status": 'ok', "message": "delete succeed"})
 
 
+def selectLine(request):
+    list = []
+    data = []
+    lists = Stu.objects.values('createTime').distinct().order_by('createTime')
+    for i in lists:
+        print(i)
+        list.append(i['createTime'])
+        num = Stu.objects.filter(createTime=i['createTime']).count()
+        data.append(num)
+        print(num)
+    print(list)
+    print(data)
+    return JsonResponse({"status": 'ok', "message": "delete succeed", "data": data, "list": list})
+
+
 def selectPie(request):
     list = []
+    option = []
     # 去重
     lists = Stu.objects.values('label').distinct()
     for i in lists:
@@ -235,9 +284,11 @@ def selectPie(request):
         num = Stu.objects.filter(label=i['label']).count()
         print(num)
         each = {'name': i['label'], 'value': num}
+        option.append(i['label'])
         list.append(each)
     print(list)
-    return JsonResponse({"status": 'ok', "message": "delete succeed", "data": list})
+    print(option)
+    return JsonResponse({"status": 'ok', "message": "delete succeed", "data": list, "list": option})
     # Stu.objects.get()
 
 

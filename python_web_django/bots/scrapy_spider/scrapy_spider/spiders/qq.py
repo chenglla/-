@@ -16,6 +16,7 @@ class QQSpider(scrapy.Spider):
         self.dynamic_css2 = kwargs.get('dynamic_css2')
         self.dynamic_data = kwargs.get('dynamic_data')
         self.dynamic_type = kwargs.get('dynamic_type')
+        # self.dynamic_date = kwargs.get('dynamic_date')
 
     def start_requests(self):
         # urls = [
@@ -38,6 +39,7 @@ class QQSpider(scrapy.Spider):
             item['name'] = element[str(self.dynamic_css1)]
             item['label'] = self.dynamic_type
             item['url'] = element[str(self.dynamic_css2)]
+            # item['createTime'] = element[str(self.dynamic_date)]
             yield item
             # title = element[str(self.dynamic_css1)]
             # url = element[str(self.dynamic_css2)]

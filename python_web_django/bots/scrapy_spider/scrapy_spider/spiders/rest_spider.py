@@ -49,7 +49,9 @@ class ToutiaoSpider(scrapy.Spider):
         # self.start_urls = ['https://s.taobao.com/search?q={}'.format(keyword)]
         self.url = keyword
         self.django_css = kwargs.get('django_css')
+        self.django_url = kwargs.get('django_url')
         self.django_type = kwargs.get('django_type')
+        self.static_date1 = kwargs.get('static_date1')
 
     def start_requests(self):
         headers = {
@@ -64,10 +66,15 @@ class ToutiaoSpider(scrapy.Spider):
         # links = response.css('#list > li ')
         for link in links:
             title = link.css('::text').extract_first()
+            # url_content = link.css('a::attr(href)').extract_first()
+            url_content = link.css(str(self.django_url)).extract_first()
             # title = link.css('a::text').extract_first()
+            url_content = response.urljoin(url_content)
+            # url_content = response.urljoin(url_content)
             item = ToutiaoSpiderItem()
             item['name'] = title
-            item['url'] = self.url
+            item['url'] = url_content
             item['label'] = self.django_type
+            item['createTime'] = self.static_date1
             print(title)
             yield item
